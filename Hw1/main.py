@@ -12,3 +12,4 @@ def ModMain():
     getMod().AGENTS.append(agent_desc)
     Maze.main.ModMain()
 
+
