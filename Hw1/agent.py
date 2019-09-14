@@ -46,7 +46,7 @@ class IdaStarSearchAgent(SearchAgent):
         # When we arrive at the origin with no more paths left 
         if current_cell == self.starting_pos and k == len(adjlist):
             print("STARTING POINT!!!")
-            cutoff+=1
+            cutoff+=2
             self.reset()
         elif k == len(adjlist):
             next_cell = self.parents[current_cell]
@@ -116,9 +116,9 @@ t        """
 
     def reset(self):
         self.visited = set([])
-        self.parents = {}
-        self.backpointers = {}
-        self.starting_pos = None
+        # self.parents = {}
+        # self.backpointers = {}
+        # self.starting_pos = None
 
     def initialize(self, init_info):
         """
